@@ -8,6 +8,7 @@ Ill-posed inverse problems in imaging remain an active research topic in several
 ## version
 In order to effectively use the high-frequency prior information to reconstruct the texture details of the image, we designed two different schemes. Here we call them HFDAEP_v1 and HFDAEP_v2.
 
+In this paper, we use the image decomposition and component summation to approximate the forward and inverse transformations.
 ![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/forward%20and%20backward.png)
 Fig. 1. Demonstration of (a) the forward transform operator and (b) the backward transform operator in HF-DAEP.
 
@@ -23,9 +24,9 @@ Fig. 2. Illustration of HF-DAEP at iterative reconstruction phase. Here MRI reco
 Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and HFDAEP.
 
 ### MRI reconstruction
-'./HFDAEP_v1/DemoMRI/demo_MRI.m' is the demo of HF-DAEP for MRI reconstruction.
+'./HFDAEP_v1/DemoMRI/demo_MRI.m' is the demo of HF-DAEP_v1 for MRI reconstruction.
 ### CT reconstruction
-'./HFDAEP_v1/DemoCT/demo_CTRec.m' is the demo of HF-DAEP for CT reconstruction.
+'./HFDAEP_v1/DemoCT/demo_CTRec.m' is the demo of HF-DAEP_v1 for CT reconstruction.
 './HFDAEP_v1/DemoCT/ultilies/generateSystemMatrix.m' is used to generate the system matrix.
 
 ## HFDAEP_v2
@@ -34,13 +35,12 @@ Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference 
 
 ### Visual Comparisons
 ![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v2/figs/fig_result.png)
-Fig. 4. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and HFDAEP.
+Fig. 4. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and DFRP.
 
 ### MRI reconstruction
-'./HFDAEP_v2/DemoMRI/demo_MRI.m' is the demo of HF-DAEP for MRI reconstruction.
+'./HFDAEP_v2/DemoMRI/demo_MRI.m' is the demo of HF-DAEP_v2 for MRI reconstruction.
 ### CT reconstruction
-'./HFDAEP_v2/DemoCT/demo_CTRec.m' is the demo of HF-DAEP for CT reconstruction.
-'./HFDAEP_v2/DemoCT/ultilies/generateSystemMatrix.m' is used to generate the system matrix.
+'./HFDAEP_v2/DemoCT/demo_CTRec.m' is the demo of HF-DAEP_v2 for CT reconstruction.
 
 ## Requirements and Dependencies
     matlab
