@@ -39,7 +39,7 @@ Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference 
 Fig. 4. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and DFRP.
 
 ### MRI reconstruction
-'./HFDAEP_v2/DemoMRI/demo_MRI.m' is the demo of HF-DAEP_v2 for MRI reconstruction.
+'./HFDAEP_v2/DemoMRI/demo_MRI_DFPR.m' is the demo of HF-DAEP_v2 for MRI reconstruction.
 ### CT reconstruction
 './HFDAEP_v2/DemoCT/demo_CTRec.m' is the demo of HF-DAEP_v2 for CT reconstruction.
 
