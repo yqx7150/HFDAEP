@@ -30,10 +30,10 @@ Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference 
 
 ## HFDAEP_v2
 ### Table
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/HFDAEP_v2/blob/master/figs/table.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v2/figs/result.png)
 
 ### Visual Comparisons
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/HFDAEP_v2/blob/master/figs/result.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v2/figs/fig_result.png)
 Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and HFDAEP.
 
 ### MRI reconstruction
