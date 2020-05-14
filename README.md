@@ -5,36 +5,48 @@ Zhuonan He, Jinjie Zhou, Dong Liang, Yuhao Wang, Qiegen Liu. Deep Frequency-recu
 ## Motivation
 Ill-posed inverse problems in imaging remain an active research topic in several decades,with new approaches constantly emerging. Recognizing that the popular dictionary learning and convolutional sparse coding are both essentially modeling the high-frequency component of an image, which convey most of the semantic infor-mation such as texture details, in this work we propose a novel multi-profile high-frequency transform-guided denoising autoencoder for attainting deep frequency-recurrent prior (DFRP). To achieve this goal, we first extract a set of multi-profile high-frequency components via a specific transformation and add artificial Gaussian noise to these high-frequency components as training samples. As the high-frequency prior information is learned, we incorporate it into classical iterative reconstruction by proximal gradient descent. Preliminary results on highly under-sampled magnetic resonance imag-ing and sparse-view computed tomography reconstruction demonstrate that the proposed method can efficiently reconstruct feature details and present advantages over state-of-the-arts.
 
-#
+## version
 In order to effectively use the high-frequency prior information to reconstruct the texture details of the image, we designed two different schemes. Here we call them HFDAEP_v1 and HFDAEP_v2.
 
-## HFDAEP_v1
-
-### Figs
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/figs/forward%20and%20backward.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/forward%20and%20backward.png)
 Fig. 1. Demonstration of (a) the forward transform operator and (b) the backward transform operator in HF-DAEP.
 
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/figs/itermri.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/itermri.png)
 Fig. 2. Illustration of HF-DAEP at iterative reconstruction phase. Here MRI reconstruction is visualized.
 
+## HFDAEP_v1
 ### Table
-
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/figs/table.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/table.png)
 
 ### Visual Comparisons
-![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/figs/result.png)
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/result.png)
 Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and HFDAEP.
 
+### MRI reconstruction
+'./HFDAEP_v1/DemoMRI/demo_MRI.m' is the demo of HF-DAEP for MRI reconstruction.
+### CT reconstruction
+'./HFDAEP_v1/DemoCT/demo_CTRec.m' is the demo of HF-DAEP for CT reconstruction.
+'./HFDAEP_v1/DemoCT/ultilies/generateSystemMatrix.m' is used to generate the system matrix.
+
+## HFDAEP_v2
+### Table
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/HFDAEP_v2/blob/master/figs/table.png)
+
+### Visual Comparisons
+![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/HFDAEP_v2/blob/master/figs/result.png)
+Fig. 3. Visual comparisons under 2D Random sampling at 80%. Top line: reference image, reconstruction using DLMRI, PANO and FDLCP; Bottom line: reconstruction using NLR-CS, DC-CNN, EDAEP and HFDAEP.
+
+### MRI reconstruction
+'./HFDAEP_v2/DemoMRI/demo_MRI.m' is the demo of HF-DAEP for MRI reconstruction.
+### CT reconstruction
+'./HFDAEP_v2/DemoCT/demo_CTRec.m' is the demo of HF-DAEP for CT reconstruction.
+'./HFDAEP_v2/DemoCT/ultilies/generateSystemMatrix.m' is used to generate the system matrix.
+
 ## Requirements and Dependencies
+    matlab
     caffe
     cuda 8.0
     
-## MRI reconstruction
-'./DemoMRI/demo_MRI.m' is the demo of HF-DAEP for MRI reconstruction.
-## CT reconstruction
-'./DemoCT/demo_CTRec.m' is the demo of HF-DAEP for CT reconstruction.
-'./DemoCT/ultilies/generateSystemMatrix.m' is used to generate the system matrix.
-
 ## [<font size=5>**[Paper]**</font>](https://arxiv.org/ftp/arxiv/papers/1910/1910.11148.pdf)
     @article{he2019learning, 
     title={Learning Priors in High-frequency Domain for Inverse Imaging Reconstruction},
