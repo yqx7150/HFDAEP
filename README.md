@@ -9,6 +9,7 @@ Ill-posed inverse problems in imaging remain an active research topic in several
 In order to effectively use the high-frequency prior information to reconstruct the texture details of the image, we designed two different schemes. Here we call them HFDAEP_v1 and HFDAEP_v2.
 
 In this paper, we use the image decomposition and component summation to approximate the forward and inverse transformations.
+
 ![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/HFDAEP_v1/figs/forward%20and%20backward.png)
 Fig. 1. Demonstration of (a) the forward transform operator and (b) the backward transform operator in HF-DAEP.
 
