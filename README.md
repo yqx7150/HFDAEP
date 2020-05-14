@@ -1,9 +1,14 @@
 # HFDAEP
 The Code is created based on the method described in the following paper:
-Zhuonan He, Jinjie Zhou, Dong Liang, Yuhao Wang, Qiegen Liu. Learning Priors in High-frequency Domain for Inverse Imaging Reconstruction
+Zhuonan He, Jinjie Zhou, Dong Liang, Yuhao Wang, Qiegen Liu. Deep Frequency-recurrent Priors for Inverse Imaging Reconstruction.
 
 ## Motivation
-Ill-posed inverse problems in imaging remain an active research topic in several decades, with new approaches constantly emerging. Recognizing that the popular dictionary learning and convolutional sparse coding approaches are both essentially modeling the high-frequency component of an image, which convey most of the semantic information such as texture details, in this work we propose a novel multi-profile high-frequency transform-guided denoising autoencoder as prior (HF-DAEP). To achieve this goal, we first extract the multi-profile high-frequency components via a specific transformation and add the artificial Gaussian noise to these high-frequency components as training samples. Then, as the high-frequency prior information is learned, we incorporate it into classical iterative reconstruction process by proximal gradient descent technique. Preliminary results on highly under-sampled magnetic resonance imaging and sparse-view computed tomography reconstruction demonstrate that the proposed method can efficiently reconstruct feature details and present advantages over state-of-the-arts.
+Ill-posed inverse problems in imaging remain an active research topic in several decades,with new approaches constantly emerging. Recognizing that the popular dictionary learning and convolutional sparse coding are both essentially modeling the high-frequency component of an image, which convey most of the semantic infor-mation such as texture details, in this work we propose a novel multi-profile high-frequency transform-guided denoising autoencoder for attainting deep frequency-recurrent prior (DFRP). To achieve this goal, we first extract a set of multi-profile high-frequency components via a specific transformation and add artificial Gaussian noise to these high-frequency components as training samples. As the high-frequency prior information is learned, we incorporate it into classical iterative reconstruction by proximal gradient descent. Preliminary results on highly under-sampled magnetic resonance imag-ing and sparse-view computed tomography reconstruction demonstrate that the proposed method can efficiently reconstruct feature details and present advantages over state-of-the-arts.
+
+#
+In order to effectively use the high-frequency prior information to reconstruct the texture details of the image, we designed two different schemes. Here we call them HFDAEP_v1 and HFDAEP_v2.
+
+## HFDAEP_v1
 
 ### Figs
 ![repeat-HFDAEPRec](https://github.com/yqx7150/HFDAEP/blob/master/figs/forward%20and%20backward.png)
