@@ -1,5 +1,5 @@
 # HFDAEP
-The Code is created based on the method described in the following paper:
+The Code is created based on the method described in the following paper:     
 Zhuonan He, Jinjie Zhou, Dong Liang, Yuhao Wang, Qiegen Liu. Deep Frequency-recurrent Priors for Inverse Imaging Reconstruction.
 
 ## Motivation
@@ -70,7 +70,7 @@ Fig. 4. Visual comparisons under 2D Random sampling at 80%. Top line: reference 
 [<font size=5>**[Paper]**</font>](https://arxiv.org/abs/2008.06284)   [<font size=5>**[Code]**</font>](https://github.com/yqx7150/HGGDP)
  
   * Denoising Auto-encoding Priors in Undecimated Wavelet Domain for MR Image Reconstruction  
-[<font size=5>**[Paper]**</font>](https://arxiv.org/ftp/arxiv/papers/1909/1909.01108.pdf)  [<font size=5>**[Code]**</font>](https://github.com/yqx7150/WDAEPRec)
+[<font size=5>**[Paper]**</font>](https://www.sciencedirect.com/science/article/pii/S0925231221000990) [<font size=5>**[Paper]**</font>](https://arxiv.org/ftp/arxiv/papers/1909/1909.01108.pdf)   [<font size=5>**[Code]**</font>](https://github.com/yqx7150/WDAEPRec)
 
   * Complex-valued MRI data from SIAT--test31 [<font size=5>**[Data]**</font>](https://github.com/yqx7150/EDAEPRec/tree/master/test_data_31)
 
