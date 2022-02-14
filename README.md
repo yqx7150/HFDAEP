@@ -1,7 +1,7 @@
 # HFDAEP
 The Code is created based on the method described in the following paper:          
 Zhuonan He, Kai Hong, Jinjie Zhou, Dong Liang, Yuhao Wang, Qiegen Liu.        
-Deep Frequency-recurrent Priors for Inverse Imaging Reconstruction.       
+Deep Frequency-Recurrent Priors for Inverse Imaging Reconstruction.       
 Signal Processing, Volume 190, January 2022, 108320.     
 https://www.sciencedirect.com/science/article/pii/S0165168421003571       
    
